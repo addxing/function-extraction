@@ -1,0 +1,4 @@
+interface:
+  display_name: "Function Extraction"
+  short_description: "Extract full feature implementation docs"
+  default_prompt: "Use $function-extraction to extract the full implementation chain for a feature."
