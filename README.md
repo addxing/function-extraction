@@ -2,7 +2,7 @@
 
 [![skills.sh](https://skills.sh/b/addxing/function-extraction)](https://skills.sh/addxing/function-extraction)
 
-A Codex-compatible skill for extracting a complete feature implementation chain from a codebase and generating a technical development document with business logic, data flow, exception handling, and Mermaid diagrams.
+A skill for extracting a complete feature implementation chain from a codebase and generating a technical development document with business logic, data flow, exception handling, and Mermaid diagrams. Works with any AI coding agent.
 
 ## Install
 
@@ -12,7 +12,7 @@ npx skills add addxing/function-extraction
 
 ## Usage
 
-After installing the skill, ask Codex to use it when you need a feature-level implementation document:
+After installing the skill, ask your AI agent to use it when you need a feature-level implementation document:
 
 ```text
 Use $function-extraction to document the login flow implementation.
@@ -24,7 +24,7 @@ For best results, provide:
 - the entry file, class, method, route, page, button text, or other clues
 - the expected output language or documentation scope, if different from the default
 
-If the entry point is missing, the skill guides Codex to search the codebase and ask you to confirm the correct entry before continuing.
+If the entry point is missing, the skill guides the agent to search the codebase and ask you to confirm the correct entry before continuing.
 
 ## What It Does
 
@@ -40,7 +40,6 @@ This skill guides an agent to:
 
 - `SKILL.md` - the skill instructions
 - `template.md` - the output document template
-- `agents/openai.yaml` - Codex UI metadata
 - `LICENSE.txt` - Apache 2.0 license
 
 ## Chinese Documentation
