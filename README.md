@@ -10,6 +10,20 @@ A skill for extracting a complete feature implementation chain from a codebase a
 npx skills add addxing/function-extraction
 ```
 
+### DeepSeek Harness
+
+This repo follows the DeepSeek Harness (DSH) Skill format. Clone it into a skills directory and it will be auto-discovered:
+
+```bash
+# User-level install (available in all projects)
+git clone https://github.com/addxing/function-extraction ~/.dsh/skills/function-extraction
+
+# Project-level install (current project only)
+git clone https://github.com/addxing/function-extraction .dsh/skills/function-extraction
+```
+
+DSH hot-reloads the skills directory after cloning; the skill becomes available in new sessions.
+
 ## Usage
 
 After installing the skill, ask your AI agent to use it when you need a feature-level implementation document:
