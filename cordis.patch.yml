@@ -1,0 +1,3 @@
+- insert:
+    - id: function-extraction
+      name: dsh-skill-function-extraction

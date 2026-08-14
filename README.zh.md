@@ -24,6 +24,13 @@ git clone https://github.com/addxing/function-extraction .dsh/skills/function-ex
 
 克隆后 DSH 会自动热更新技能目录，新会话即可使用该 Skill。
 
+也可以作为官方 bundle 插件一行安装（需要 pnpm，安装后重启 Web）：
+
+```bash
+dsh plugin --profile web add "github:addxing/function-extraction#main"
+```
+
+
 ## 使用方式
 
 安装后，在需要提取某个功能实现文档时，让 AI 代理使用这个 Skill：

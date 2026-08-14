@@ -24,6 +24,13 @@ git clone https://github.com/addxing/function-extraction .dsh/skills/function-ex
 
 DSH hot-reloads the skills directory after cloning; the skill becomes available in new sessions.
 
+Or install it as an official bundle plugin in one line (requires pnpm; restart the web app afterwards):
+
+```bash
+dsh plugin --profile web add "github:addxing/function-extraction#main"
+```
+
+
 ## Usage
 
 After installing the skill, ask your AI agent to use it when you need a feature-level implementation document:
