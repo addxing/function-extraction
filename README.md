@@ -2,7 +2,7 @@
 
 [![skills.sh](https://skills.sh/b/addxing/function-extraction)](https://skills.sh/addxing/function-extraction)
 
-A skill for extracting a complete feature implementation chain from a codebase and generating a technical development document with business logic, data flow, exception handling, and Mermaid diagrams. Works with any AI coding agent.
+A skill for extracting a complete feature implementation chain from a codebase and generating a technical development document with business logic, data flow, exception handling, and Mermaid diagrams. Works with AI coding tools that support Agent Skills.
 
 ## Install
 
@@ -10,33 +10,14 @@ A skill for extracting a complete feature implementation chain from a codebase a
 npx skills add addxing/function-extraction
 ```
 
-### DeepSeek Harness
-
-This repo follows the DeepSeek Harness (DSH) Skill format. Clone it into a skills directory and it will be auto-discovered:
-
-```bash
-# User-level install (available in all projects)
-git clone https://github.com/addxing/function-extraction ~/.dsh/skills/function-extraction
-
-# Project-level install (current project only)
-git clone https://github.com/addxing/function-extraction .dsh/skills/function-extraction
-```
-
-DSH hot-reloads the skills directory after cloning; the skill becomes available in new sessions.
-
-Or install it as an official bundle plugin in one line (requires pnpm; restart the web app afterwards):
-
-```bash
-dsh plugin --profile web add "github:addxing/function-extraction#main"
-```
-
-
 ## Usage
+
+Select this skill using your tool’s skill mechanism, or ask for it by name. Invocation syntax and automatic activation depend on the tool.
 
 After installing the skill, ask your AI agent to use it when you need a feature-level implementation document:
 
 ```text
-Use $function-extraction to document the login flow implementation.
+Use the function-extraction skill to document the login flow implementation.
 ```
 
 For best results, provide:

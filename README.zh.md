@@ -10,33 +10,14 @@
 npx skills add addxing/function-extraction
 ```
 
-### DeepSeek Harness
-
-本仓库遵循 DeepSeek Harness（DSH）的 Skill 格式，克隆到技能目录后即可被自动发现：
-
-```bash
-# 用户级安装（所有项目可用）
-git clone https://github.com/addxing/function-extraction ~/.dsh/skills/function-extraction
-
-# 项目级安装（仅当前项目可用）
-git clone https://github.com/addxing/function-extraction .dsh/skills/function-extraction
-```
-
-克隆后 DSH 会自动热更新技能目录，新会话即可使用该 Skill。
-
-也可以作为官方 bundle 插件一行安装（需要 pnpm，安装后重启 Web）：
-
-```bash
-dsh plugin --profile web add "github:addxing/function-extraction#main"
-```
-
-
 ## 使用方式
+
+通过所用工具的技能机制选择本技能，或在对话中按名称指定。具体调用语法和自动触发能力以所用工具为准。
 
 安装后，在需要提取某个功能实现文档时，让 AI 代理使用这个 Skill：
 
 ```text
-Use $function-extraction to document the login flow implementation.
+使用 function-extraction 技能提取登录功能的完整实现文档。
 ```
 
 为了获得更准确的结果，建议提供：
